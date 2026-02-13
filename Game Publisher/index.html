@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Sunset Games</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body> <!--this is the startpage for my website-->
+    <header><!--website header with a logo that links to the startpage, and navbar links to the about page and contacts-->
+        <div id="logo"><a href="index.html"><img src="logo.png" alt=""></a><h1>Sunset Games</h1></div>
+        <nav><a href="about.html">About</a><a href="#contactus">Contact</a></nav>
+    </header>
+    <main>
+        <section id="gamescarousel"><!--div that loops through images from some published games-->
+            <h1>Featured games</h1>
+            <div id="gamescarouselimgs"><a id="gamescarousellink"><!--this links to the game that is being shown-->
+                <h1 class="namecarousel"></h1><!--this uses js to automatically change to the name of the game that is being shown-->
+                <div class="gamescarouselgradient"></div>
+                <div class="imgcarousel"><!--div with all the images that can show up, js automatically switches between these-->
+                    <img src="Nyctophobia/img0.jpg" alt="">
+                    <img src="Nyctophobia/img4.jpg" alt="">
+                    <img src="Nyctophobia/img2.jpg" alt="">
+                    <img src="Once Upon a Toad/img0.jpg" alt="">
+                    <img src="Once Upon a Toad/img3.jpg" alt="">
+                </div>
+            </a></div>
+        </section>
+        <section id="allgames"><!--section with all the games that are puplished by sunset games, and links to their individual pages-->
+            <h1>All Games</h1>
+            <div>
+                <a href="Once Upon a Toadhtml.html"><img src="Once Upon a Toad/img2.jpg" alt=""><div class="testgame"><h2>Once Upon a Toad</h2></div></a>
+                <a href="Nyctophobiahtml.html"><img src="Nyctophobia/img1.jpg" alt=""><div class="testgame"><h2>Nyctophobia</h2></div></a>
+            </div>
+        </section>
+    </main>
+</body>
+
+<footer><!--this is the footer, clicking on the "contact" link leads you here-->
+    <div id="contactus"><h2>Contact us</h2><br><p>+555-4638 28 83 <br><br>Sunset.Games@email.com</p></div>
+    <div id="followus"><h2>Follow us on</h2><br><a href="">Twitter</a><br><a href="">Instagram</a><br><a href="">Threads</a><br><a href="">Bluesky</a></div>
+</footer>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Once Upon a Toad - Sunset Games</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body><!--this is the individual page for Once Upon a Frog-->
+    <header><!--website header with a logo that links to the startpage, and navbar links to the about page and contacts-->
+        <div id="logo"><a href="index.html"><img src="logo.png" alt=""></a><h1>Sunset Games</h1></div>
+        <nav><a href="about.html">About</a><a href="#contactus">Contact</a></nav>
+    </header>
+    <main id="gamemain"><!--this is splint into 2 parts, left and right-->
+        <h1>Once Upon a Toad</h1>
+        <section id="gameright"><!--the right section, of the page is < 800px wide it will show up above the left section instead--> 
+            <div id="gameinfo">
+                <div><img src="Once Upon a Toad/img2.jpg" alt=""></div><!--game logo-->
+                <div class="lightner"><!--wrapper that changes the background-->
+                    <div id="gameinfo2"><!--this is the actual game info, the info isnt actually real for the most part-->
+                        <p>Once Upon a Toad is a lementum nisi vitae mi hendrerit tempus. Nullam convallis, lacus et facilisis elementum, ipsum lorem aliquam massa, non molestie tellus massa aliquet tortor.<br><br>
+                        <p>Developer: <span>Team Placeholder</span></p><br>
+                        <p>Genres: <span>Idrk, Woowo</span></p><br>
+                        <p>Available on: <span>Steam, Itch.io</span></p><br>
+                        <div id="buybutton"><button>Buy Now</button></div><!--buy button that does nothing but look cool-->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="gameleft"><!--the left section-->
+            <div id="gameimg"><!--div that loops through some images from the game-->
+                <button class="left" onclick="changeImg(false)">&lt</button><!--button that switches to the previous images-->
+                <div class="imgcarousel"><!--div with all the images that can show up-->
+                    <img src="Once Upon a Toad/img0.jpg" alt="">
+                    <img src="Once Upon a Toad/img2.jpg" alt="">
+                    <img src="Once Upon a Toad/img1.jpg" alt="">
+                    <img src="Once Upon a Toad/img3.jpg" alt="">
+                </div>
+                <button class="right" onclick="changeImg(true)">&gt</button><!--button that switches to the next image-->
+            </div>
+            <div class="lightner"><!--wrapper that changes the background-->
+                <div id="aboutgame"><!--a more extensive description of the game-->
+                    <h2>About this game</h2><br>
+                    <p>
+                        Pellentesque nunc leo, hendrerit a lacinia ac, sollicitudin ac est. Nullam accumsan finibus feugiat. 
+                        Proin eu massa accumsan, feugiat metus sed, volutpat sapien. Phasellus ac volutpat nibh, quis interdum 
+                        ligula. Integer iaculis non mauris aliquet rutrum. Vestibulum eget arcu eu orci gravida elementum. 
+                        Maecenas tincidunt porttitor ipsum, a fringilla metus semper nec. Duis quis lectus dignissim, mollis 
+                        nisi vel, interdum nisl. Fusce pharetra eget enim id lobortis. Phasellus neque nibh, mollis vitae 
+                        nibh nec, ultrices feugiat lacus.
+                        <br><br>
+                        Proin elementum mauris at dapibus tempus. Curabitur molestie magna sit amet dolor tempor, id scelerisque
+                        tellus aliquet. Proin vitae elit id arcu dictum bibendum eu sed massa. Nam maximus ex ac tortor molestie 
+                        rutrum. Fusce a quam vel mauris rutrum tristique at malesuada odio. Donec cursus vestibulum nisl, vitae 
+                        condimentum nunc tristique nec. Sed faucibus eget est eget semper. Class aptent taciti sociosqu ad 
+                        litora torquent per conubia nostra, per inceptos himenaeos. Sed eu porttitor nulla, quis euismod 
+                        turpis. Quisque maximus neque at pulvinar hendrerit. Mauris quis dolor dapibus magna pulvinar pulvinar.
+                        <br><br>
+                        Integer elementum molestie diam, quis fringilla orci tincidunt sed. Ut nec volutpat magna, ac ultrices 
+                        arcu. Aenean ac ornare urna. Sed pretium diam vestibulum eros egestas fermentum quis eu risus. Nulla 
+                        gravida enim vitae augue accumsan pretium. Curabitur luctus, turpis id tincidunt pharetra, diam odio 
+                        posuere augue, nec dignissim magna mi non libero. Phasellus molestie sodales ex, sit amet accumsan 
+                        tortor sollicitudin sit amet. Nunc congue nisi elit, et fringilla sem pulvinar quis.
+                    </p>
+                </div>
+                <div id="systemreq"><!--system requirements for the game-->
+                    <h2>System requirements</h2><br>
+                    <table>
+                        <tr><th>Minimum:</th><th>Recommended:</th></tr>
+                        <tr><td><br></td><td></td></tr>
+                        <tr><td>Processor: <span>Lorem</span></td><td>Processor: <span>Amet</span></td></tr>
+                        <tr><td>Memory: <span>Ipsum</span></td><td>Memory: <span>Consetetur</span></td></tr>
+                        <tr><td>Graphics: <span>Dolor</span></td><td>Graphics: <span>Sadipscing</span></td></tr>
+                        <tr><td>Storage: <Span>Sit</Span><td>Storage: <span>Elitr</span></td></tr>
+                    </table>
+
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<footer><!--this is the footer, clicking on the "contact" link leads you here-->
+    <div id="contactus"><h2>Contact us</h2><br><p>+555-4638 28 83 <br><br>Sunset.Games@email.com</p></div>
+    <div id="followus"><h2>Follow us on</h2><br><a href="">Twitter</a><br><a href="">Instagram</a><br><a href="">Threads</a><br><a href="">Bluesky</a></div>
+</footer>
+</html>

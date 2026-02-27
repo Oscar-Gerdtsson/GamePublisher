@@ -7,42 +7,42 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
-<body><!--this is the individual page for Nyctophobia-->
-    <header><!--website header with a logo that links to the startpage, and navbar links to the about page and contacts-->
+<body><!--detta är den individuella sidan för spelet Nyctophobia-->
+    <header><!--header med en logga som länkar till startsidan, och navbar med länkar till om oss sidan och kontakt -->
         <div id="logo"><a href="index.html"><img src="logo.png" alt=""></a><h1>Sunset Games</h1></div>
         <nav><a href="about.html">About</a><a href="#contactus">Contact</a></nav>
     </header>
-    <main id="gamemain"><!--this is splint into 2 parts, left and right-->
+    <main id="gamemain"><!-- main är uppdelad i 2 bitar, höger och vänster-->
         <h1>Nyctophobia</h1>
-        <section id="gameright"><!--the right section, of the page is < 800px wide it will show up above the left section instead-->          
+        <section id="gameright"><!--den högra delen, om sidan är < 800px bred så hamnar den över den vänstra istället-->          
             <div id="gameinfo">
-                <div><img src="Nyctophobia/logo.jpg" alt="logo"></div><!--game logo-->
-                <div class="lightner"><!--wrapper that changes the background-->
-                    <div id="gameinfo2"><!--this is the actual game info, the info isnt actually real for the most part-->
+                <div><img src="Nyctophobia/logo.jpg" alt="logo"></div><!--spelets loggo-->
+                <div class="lightner"><!--wrapper som ändrar bakgrunden-->
+                    <div id="gameinfo2"><!--info om spelet, informationen är mest fake-->
                         <p>Nyctophobia is a lementum nisi vitae mi hendrerit tempus. Nullam convallis, lacus et facilisis elementum, ipsum lorem aliquam massa, non molestie tellus massa aliquet tortor.<br><br>
                         <p>Developer: <span>Simon</span></p>
                         <p>Voice Acting: <span>Buster</span></p><br>
                         <p>Genres: <span>Horror</span></p><br>
                         <p>Available on: <span>Steam, Itch.io</span></p><br>
-                        <div id="buybutton"><button>Buy Now</button></div><!--buy button that does nothing but look cool-->
+                        <div id="buybutton"><button>Buy Now</button></div><!--knapp till att köpa spelet, den gör inget egentligen-->
                     </div>
                 </div>
             </div>
         </section>
-        <section id="gameleft"><!--the left section-->
-            <div id="gameimg"><!--div that loops through some images from the game-->
-                <button class="left" onclick="changeImg(false)">&lt</button><!--button that switches to the previous images-->
-                <div class="imgcarousel"><!--div with all the images that can show up-->
+        <section id="gameleft"><!--den vänstra delet-->
+            <div id="gameimg"><!--div som loopar igenom bilder från spelet-->
+                <button class="left" onclick="changeImg(false)">&lt</button><!--knapp som byter till den förra bilden-->
+                <div class="imgcarousel"><!--div med alla bilder som kan synas-->
                     <img src="Nyctophobia/img0.jpg" alt="">
                     <img src="Nyctophobia/img1.jpg" alt="">
                     <img src="Nyctophobia/img2.jpg" alt="">
                     <img src="Nyctophobia/img3.jpg" alt="">
                     <img src="Nyctophobia/img4.jpg" alt="">
                 </div>
-                <button class="right" onclick="changeImg(true)">&gt</button><!--button that switches to the next image-->
+                <button class="right" onclick="changeImg(true)">&gt</button><!--knapp som byter till nästa bild-->
             </div>
-            <div class="lightner"><!--wrapper that changes the background-->
-                <div id="aboutgame"><!--a more extensive description of the game-->
+            <div class="lightner"><!--wrapper som ändrar bakgrunden-->
+                <div id="aboutgame"><!--större beskrivning av spelet-->
                     <h2>About this game</h2><br>
                     <p>
                         Pellentesque nunc leo, hendrerit a lacinia ac, sollicitudin ac est. Nullam accumsan finibus feugiat. 
@@ -66,7 +66,7 @@
                         tortor sollicitudin sit amet. Nunc congue nisi elit, et fringilla sem pulvinar quis.
                     </p>
                 </div>
-                <div id="systemreq"><!--system requirements for the game-->
+                <div id="systemreq"><!--system requirements för spelet-->
                     <h2>System requirements</h2><br>
                     <table>
                         <tr><th>Minimum:</th><th>Recommended:</th></tr>
@@ -81,8 +81,9 @@
         </section>
     </main>
 </body>
-<footer><!--this is the footer, clicking on the "contact" link leads you here-->
+<footer><!--footer, om man klickar på contact i headern så kommer man hit-->
     <div id="contactus"><h2>Contact us</h2><br><p>+555-4638 28 83 <br><br>Sunset.Games@email.com</p></div>
     <div id="followus"><h2>Follow us on</h2><br><a href="">Twitter</a><br><a href="">Instagram</a><br><a href="">Threads</a><br><a href="">Bluesky</a></div>
 </footer>
+
 </html>

@@ -1,12 +1,12 @@
 
-@font-face {/*link to the font*/
+@font-face {/*länk till fonten*/
     font-family: "Tomorrow";
     src: url(Tomorrow/Tomorrow-Regular.ttf);
 }
 
-/*alot of things have dropshadows and gradients that become lighter in the middle*/
+/*många saker har dropshadows och gradients som är ljusare i mitten*/
 
-/*some styles that are used everywhere*/
+/*universal styles*/
 *{
     margin: 0;
     padding: 0;
@@ -36,7 +36,7 @@ h1{
 h2, p{filter: drop-shadow( 3px 5px 3px hsl(300, 20%, 10%));}
 
 
-/*Styles for the header*/
+/*    Styles till headern    */
 
 
 header{
@@ -75,7 +75,7 @@ nav a:hover{
 }
 
 
-/*Styles for the about page*/
+/*    Styles till om oss sidan    */
 
 
 #about{
@@ -86,10 +86,10 @@ nav a:hover{
 #about span{font-size: 30px;}
 
 
-/*Styles for the start page*/
+/*    Styles till startsidan    */
 
 
-/*styles for the image looper*/
+/*styles till image loopern*/
 #gamescarousel{
     width: 80vw;
     margin: 50px auto;
@@ -111,7 +111,7 @@ nav a:hover{
 }
 #gamescarouselimgs img{aspect-ratio: 16/9;}
 
-/*styles for the allgames div*/
+/*styles till allgames diven*/
 #allgames{
     width: 100vw;
     background-image: linear-gradient(to right, hsl(300, 20%, 16%), hsl(300, 20%, 18%), hsl(300, 20%, 16%));
@@ -154,7 +154,7 @@ nav a:hover{
 }
 
 
-/*styles for the individual game pages*/
+/*    styles till de individuella spelsidorna    */
 
 
 #gamemain {
@@ -179,7 +179,7 @@ nav a:hover{
     width:35vw;
 }
 
-/*styles for the image looper*/
+/*styles till image loopern*/
 #gameimg{
     position: relative;
     width: 60vw;
@@ -187,7 +187,7 @@ nav a:hover{
 }
 .imgcarousel img{ display: none; aspect-ratio: 16/9;}
 
-/*styles for the image switcher buttons*/
+/*styles till image-bytar-knapparna*/
 button.left,button.right{
     position:absolute;
     bottom: 40%;
@@ -207,7 +207,7 @@ button.right{right: 0;}
 div:hover>button.left:hover,div:hover>button.right:hover{opacity: 70%;}
 button.left:active,button.right:active{background-color: #444;}
 
-/*styles for the gameinfo div*/
+/*styles till gameinfo diven*/
 #gameinfo{
     float: right;
     margin: 0 2.5vw;
@@ -228,7 +228,7 @@ button.left:active,button.right:active{background-color: #444;}
     aspect-ratio: 2/1;
 }
 
-/*styles for the buy button*/
+/*styles till köpknappen*/
 #buybutton{
    width: 90%;
    margin: 20px auto;
@@ -250,10 +250,10 @@ button.left:active,button.right:active{background-color: #444;}
     transition-duration: 150ms;
 }
 
-/*styles for the big game description*/
+/*styles till den stora spelbeskrivningen*/
 #aboutgame{padding:20px;}
 
-/*styles for the system requirements*/
+/*styles till system requirements*/
 #systemreq{
     padding: 20px;
     background-image: linear-gradient( to right, hsl(300, 20%, 20%), hsl(300, 20%, 21%), hsl(300, 20%, 20%));
@@ -272,7 +272,7 @@ button.left:active,button.right:active{background-color: #444;}
     text-align: left;
 }
 
-/*styles for the footer*/
+/*styles till footern*/
 footer{
     justify-content: space-around;
     display: flex;
@@ -289,7 +289,7 @@ footer a, footer p{font-size: 20px; filter: drop-shadow( 5px 8px 5px hsl(300, 20
 footer a:hover{color: hsl(20, 100%, 80%);}
 #followus{margin-top: 50px;}
 
-/*media query that mostly moves images that are next to eachother so they arent anymore*/
+/*media query som mest flyttar på bilder/divs så de inte overlappar*/
 @media(max-width: 800px){
     h1{font-size: 40px;}
     #allgames>div{flex-wrap: wrap;}
@@ -299,4 +299,5 @@ footer a:hover{color: hsl(20, 100%, 80%);}
     #gameleft{float: none; width: 80vw;margin: auto;}
     #gameinfo{float: none;width: 80vw; margin: auto;}
     #gameimg{width: 80vw;}
+
 }
